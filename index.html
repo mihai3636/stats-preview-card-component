@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Styling -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-  Get insights that help your business grow.
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body class="stats">
+    <main class="hero-section">
+      <div class="hero-info">
+        <h1 class="title">
+          Get <span class="text-purple">insights</span> that help your business
+          grow.
+        </h1>
+        <p class="text">
+          Get insights that help your business grow. Discover the benefits of
+          data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+        <ul class="stats-list">
+          <li class="item">
+            <p class="value">10k+</p>
+            <p class="subtitle">companies</p>
+          </li>
+          <li class="item">
+            <p class="value">314</p>
+            <p class="subtitle">templates</p>
+          </li>
+          <li class="item">
+            <p class="value">12M+</p>
+            <p class="subtitle">queries</p>
+          </li>
+        </ul>
+      </div>
+      <picture>
+        <source
+          media="(max-width: 500px)"
+          srcset="images/image-header-mobile.jpg"
+        />
+        <img
+          class="hero-img"
+          src="images/image-header-desktop.jpg"
+          alt="Three females working at their laptops inside an office"
+        />
+      </picture>
+    </main>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Get insights that help your business grow. Discover the benefits of data
+    analytics and make better decisions regarding revenue, customer experience,
+    and overall efficiency. 10k+ companies 314 templates 12m+ queries -->
+  </body>
 </html>

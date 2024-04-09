@@ -1,0 +1,21 @@
+@use "./utils" as *;
+@use "./reset";
+
+body {
+  min-height: 100vh;
+}
+
+.stats {
+  background-color: var(--cl-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--sp-7);
+}
+
+.hero-section {
+  color: var(--cl-main-heading);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
